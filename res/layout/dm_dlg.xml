@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<LinearLayout
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent"
+	android:orientation="horizontal"
+	>
+<TextView  android:id="@+id/tv_word_number"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_weight="1"
+    android:textSize="18px"
+    android:text="选择收信人ID  -->"
+    />
+ <Button
+ 	android:id="@+id/bt_friendsId"
+ 	android:layout_width="wrap_content"
+ 	android:layout_height="wrap_content"
+ 	android:layout_gravity="right"
+ 	android:text="点击选择"
+ 	/>
+ </LinearLayout>   
+<EditText 
+	android:id="@+id/et_word_number"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:autoLink="none"
+	android:scrollHorizontally="false"
+	android:gravity="top"
+	android:lines="6"
+	android:singleLine="false"
+	
+	/>
+	
+</LinearLayout>

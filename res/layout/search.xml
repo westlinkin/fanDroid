@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    >
+<LinearLayout
+	android:orientation="vertical"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:background="#1bbedb"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		
+		>
+		
+	    <ImageView  
+			android:id=	"@+id/bt_hotword"
+		    android:layout_width="32px" 
+		    android:layout_height="32px" 
+			android:src="@drawable/hotword"
+		    android:layout_marginLeft="7dip"
+		    android:layout_weight="1"
+		    android:paddingTop="4px"
+	    />
+	    <TextView
+	    	android:id="@+id/tv_UserID"
+	    	android:gravity="center"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textColor="#000000"
+	    	android:text="UserID"
+	    	android:textSize="17px"
+	    	android:paddingBottom="7px"
+	    	android:paddingTop="7px"
+	    	android:layout_weight="3"
+	    />
+		<TextView  
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:gravity="center"
+		    android:layout_marginRight="10dip"
+		    android:layout_weight="1"
+	    />
+    
+    </LinearLayout>
+    
+    <LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+    	android:layout_gravity="center_horizontal"
+    	android:padding="12px"
+    >
+    <EditText
+    	android:id="@+id/et_search"
+	    android:layout_width="250px" 
+	    android:layout_height="wrap_content" 
+	    android:textColor="#000000"
+	    android:singleLine="true"
+	    android:inputType="text"
+	 	
+    />
+    <Button
+    	android:id="@+id/btn_search"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="Go"
+    />
+    </LinearLayout>
+    
+
+   <com.android.fanfou.MyListView
+    	android:id="@+id/mlv_list"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+		
+		android:fadingEdge="none"
+		android:textColor="#000000"
+		android:cacheColorHint="#00000000"
+		android:paddingBottom="31px"
+    	android:listSelector="@drawable/list_selector"
+    />
+</LinearLayout>    
+  	<LinearLayout
+    android:orientation="horizontal"
+ 	android:layout_width="fill_parent"
+ 	android:layout_height="wrap_content"
+ 	android:layout_alignParentBottom="true" 
+ 	android:background="#1bbedb"
+ 	android:paddingBottom="7px"
+ 	android:paddingTop="7px"
+ 	>
+ 	<TextView  
+ 		android:id="@+id/bt_HomePage"
+ 		android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:gravity="center"
+	    android:textColor="#000000"
+	    android:text="首页"
+	    android:textSize="17px"
+	    android:layout_weight="1"
+    />  
+    <TextView
+    	android:id="@+id/bt_Me"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:textColor="#000000"
+    	android:text=" @我"
+    	android:textSize="17px"
+    	android:layout_weight="1"
+    />
+    <TextView
+    	android:id="@+id/bt_Letter"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:textColor="#000000"
+    	android:text="私信"
+    	android:textSize="17px"
+    	android:layout_weight="1"
+    />
+    <TextView
+    	android:id="@+id/bt_Space"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:textColor="#000000"
+    	android:text="空间"
+    	android:textSize="17px"
+    	android:layout_weight="1"
+    />
+    <TextView
+    	android:id="@+id/bt_Search"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:textColor="#000000"
+    	android:text="搜索"
+    	android:background="#0d9abd"
+    	android:textSize="17px"
+    	android:layout_weight="1"
+    />
+    <TextView
+    	android:id="@+id/bt_Cookies"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:textColor="#000000"
+    	android:text="收藏"
+    	android:textSize="17px"
+    	android:layout_weight="1"
+    />
+ </LinearLayout>  
+
+</RelativeLayout>

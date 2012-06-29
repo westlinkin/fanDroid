@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:id="@+id/temp_linearlayout"
+>
+
+<ImageView
+  android:id="@+id/profile_image"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+/>
+
+<LinearLayout 
+  android:id="@+id/temp_linearlayout2"
+  android:orientation="vertical"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+>
+
+
+<LinearLayout 
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  >
+<!-- user name -->
+	<TextView
+   		android:id="@+id/dm_sender_text" 
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#1aba0b"
+        />
+<!-- meta -->
+    
+
+</LinearLayout>  
+
+
+<com.android.fanfou.MyTextView
+  android:id="@+id/dm_text" 
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:textColor="#000000"
+  android:autoLink="web"
+/>
+<TextView
+	  android:id="@+id/dm_meta_text" 
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:textStyle="italic"
+	  android:textSize="12sp"
+	  android:autoLink="web"
+	/>
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+
+  	<PreferenceCategory android:title="基本设置">
+  	
+	<!--ListPreference
+	
+	这里是账户设置
+		
+	/-->
+
+   <CheckBoxPreference  
+            android:key="quit_remind"  
+            android:defaultValue="false"
+            android:title="退出提醒"
+            android:summaryOn="在点击退出时显示提醒对话框"
+            android:summaryOff="在点击退出时不显示提醒对话框"
+            />  
+
+   <CheckBoxPreference  
+            android:key="auto_read_newTweet"
+            android:defaultValue="true"
+            android:title="自动读取新消息"
+            android:summaryOn="当滚动到底部时自动读取新消息"
+            android:summaryOff="滚动到底部时需手动读取新消息"
+            />  
+	
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="提醒设置">
+   <CheckBoxPreference  
+            android:key="replies_remind"
+            android:defaultValue="true"
+            android:title="回复提醒"
+            android:summaryOn="有新回复时在状态栏显示提醒"
+            android:summaryOff="有新回复时不在状态栏显示提醒"
+            />  
+   <CheckBoxPreference  
+            android:key="dm_remind"
+            android:defaultValue="true"
+            android:title="私信提醒"
+            android:summaryOn="有新私信时在状态栏显示提醒"
+            android:summaryOff="有新私信时不在状态栏显示提醒"
+            />  
+
+   <CheckBoxPreference  
+            android:key="vibrate"
+            android:defaultValue="true"
+            android:title="震动"
+            android:summaryOn="有新消息提示时手机振动"
+            android:summaryOff="手机不振动"
+            />  
+
+  </PreferenceCategory>
+  
+<PreferenceCategory android:title="更新设置">
+	<CheckBoxPreference  
+            android:key="update_setting"
+            android:defaultValue="true"
+            android:title="自动更新"
+            android:summary="有新版本时自动更新"
+
+            />  
+
+  </PreferenceCategory>
+
+
+</PreferenceScreen>

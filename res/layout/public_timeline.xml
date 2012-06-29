@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    >
+   
+<LinearLayout
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	
+	<LinearLayout
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="#1bbedb"
+	>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		
+		>
+		<ImageView  
+			android:id=	"@+id/bt_Write"
+		    android:layout_width="32px" 
+		    android:layout_height="32px" 
+			android:src="@drawable/write"
+		    android:layout_marginLeft="7dip"
+		    android:layout_weight="1"
+		    android:paddingTop="4px"
+	    />
+	    <TextView
+	    	android:id="@+id/tv_UserID"
+	    	android:gravity="center"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textColor="#000000"
+	    	android:text="UserID"
+	    	android:textSize="17px"
+	    	android:layout_weight="3"
+	    	android:paddingBottom="7px"
+	    	android:paddingTop="7px"
+	    />
+	    <ImageView
+	    	android:id="@+id/bt_Refresh"
+	    	android:layout_width="32px"
+	    	android:layout_height="32px"
+	    	android:src="@drawable/refresh"
+	    	android:layout_marginRight="7dip"
+	    	android:layout_weight="1"
+	    	android:paddingTop="4px"
+	    />
+    </LinearLayout>
+    </LinearLayout>
+    
+    <com.android.fanfou.MyListView
+    	android:id="@+id/mlv_list"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+		
+		android:fadingEdge="none"
+		android:textColor="#000000"
+		android:cacheColorHint="#00000000"
+    	android:listSelector="@drawable/list_selector"
+    />
+  </LinearLayout>
+ 
+</RelativeLayout>
